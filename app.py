@@ -1,15 +1,14 @@
 from flask import Flask
+from news import news_bp
 
 app = Flask(__name__)
+app.register_blueprint(news_bp)
 
 @app.route("/")
 def hello_world():
     print("hello")
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World!</p><button>Press</button>"
 
-@app.route("/news")
-def news():
-    return "<p>This is the NEWS</p>"
 
 @app.route("/sport")
 def sport():
