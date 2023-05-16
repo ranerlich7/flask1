@@ -13,7 +13,7 @@ def news():
 
 @news_bp.route('/global')
 def news_global():
-    return "<p> **** This is the GLOBAL NEWS ****</p>"
+    return "<p> **** This is the GLOBAL !!! NEWS ****</p>"
 
 
 
